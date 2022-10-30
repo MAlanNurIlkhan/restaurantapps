@@ -1,0 +1,150 @@
+@media screen and (max-width: 550px){
+    .search-container {
+        flex-direction: column;
+        position: static;
+    }
+
+    .search-container > input {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .search-container > button {
+        width: 100%;
+    }
+
+    .hero_inner {
+        margin: 0 auto;
+        width: 100%;
+        padding: 16px;
+    }
+
+    .restaurant {
+        display: block;
+    }
+
+    .restaurant .restaurant_poster {
+        padding: 8px 0px;
+    }
+
+    .restaurant-review .restaurant-review_form p .input-label {
+        min-width: 0px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .restaurant .restaurant_poster {
+        width: 100%;
+        max-width: 585px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 825px) {
+    .app-bar {
+        grid-template-columns: 1fr auto;
+        padding: 8px 32px;
+    }
+   
+    .app-bar .app-bar_brand h1 {
+        font-size: 1.5em;
+    }
+   
+    .app-bar .app-bar_menu {
+        display: none;
+    }
+   
+    .app-bar .app-bar_navigation {
+        position: static;
+        width: 100%;
+    }
+   
+    .app-bar .app-bar_navigation ul li {
+        display: inline-block;
+    }
+   
+    .app-bar .app-bar_navigation ul li a {
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        width: 120px;
+        margin: 0;
+    }
+   
+    .restaurants {
+        grid-template-columns: 1fr 1fr;
+    }
+   
+    .restaurant {
+        grid-template-columns: auto 1fr;
+    }
+   
+    .restaurant .restaurant_title {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+   
+    .restaurant .restaurant_overview {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .restaurant .restaurant-review_header {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    .restaurant-review {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .restaurant-review_container {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .restaurant-review .restaurant-review_item {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .restaurant-review .restaurant-review_form {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .restaurant-review .restaurant-review_form p .textarea-label {
+        display: inline-block;
+        width: 200px;
+        vertical-align: top;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .restaurant-review .restaurant-review_form p input {
+        width: 100%;
+    }
+    
+    .restaurant-review .restaurant-review_form p textarea {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .restaurants {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .restaurants {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .restaurants {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
